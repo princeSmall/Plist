@@ -1,3 +1,4 @@
+# 1. OC
 ### 解析plist文件
 
 1. plist文件以类似键值对(key - value)的形式，存储项目中的各种数据
@@ -62,3 +63,41 @@
 
 }
 </pre>
+
+# 2. Swift
+
+1. 创建swift文件，会自动创建bridging桥接文件
+2. 在oc类文件中导入swift头文件
+<pre>#import "InfoPlist-Swift.h"
+InfoPlist:项目名
+Swift.h：固定导入
+</pre>
+
+#### 代码实现
+
+        self.view.backgroundColor = UIColor.white
+        let plistPath = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let data:NSMutableArray = NSMutableArray.init(contentsOfFile: plistPath!)!
+        let message = data.description
+        print(message)
+        
+        let dic:NSMutableDictionary = NSMutableDictionary()
+        dic.setObject("Tongle", forKey: "Name" as NSCopying)
+        dic.setObject("20", forKey: "Age" as NSCopying)
+        dic.setObject("shanghai", forKey: "Address" as NSCopying)
+        dic.setObject("Man", forKey: "Sex" as NSCopying)
+        
+        let dic1:NSMutableDictionary = NSMutableDictionary()
+        dic1.setObject("Limin", forKey: "Name" as NSCopying)
+        dic1.setObject("22", forKey: "Age" as NSCopying)
+        dic1.setObject("shanghai", forKey: "Address" as NSCopying)
+        dic1.setObject("Woman", forKey: "Sex" as NSCopying)
+        
+        let a:NSMutableArray = NSMutableArray.init(object: dic)
+        a.add(dic1)
+        a.write(toFile:plistPath!, atomically: true)
+        let datas:NSMutableArray = NSMutableArray.init(contentsOfFile: plistPath!)!
+        let messages = datas.description
+        print(messages)
+
+ 
