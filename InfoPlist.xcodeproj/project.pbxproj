@@ -13,6 +13,7 @@
 		EEC860382085BA6B004A492D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC860372085BA6B004A492D /* Assets.xcassets */; };
 		EEC8603B2085BA6B004A492D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC860392085BA6B004A492D /* LaunchScreen.storyboard */; };
 		EEC8603E2085BA6B004A492D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8603D2085BA6B004A492D /* main.m */; };
+		EEC860452085BA99004A492D /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC860442085BA99004A492D /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EEC8603A2085BA6B004A492D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEC8603C2085BA6B004A492D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC8603D2085BA6B004A492D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEC860442085BA99004A492D /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				EEC8602F2085BA6A004A492D /* AppDelegate.m */,
 				EEC860312085BA6A004A492D /* ViewController.h */,
 				EEC860322085BA6A004A492D /* ViewController.m */,
+				EEC860442085BA99004A492D /* Property List.plist */,
 				EEC860342085BA6A004A492D /* Main.storyboard */,
 				EEC860372085BA6B004A492D /* Assets.xcassets */,
 				EEC860392085BA6B004A492D /* LaunchScreen.storyboard */,
@@ -130,6 +133,7 @@
 			files = (
 				EEC8603B2085BA6B004A492D /* LaunchScreen.storyboard in Resources */,
 				EEC860382085BA6B004A492D /* Assets.xcassets in Resources */,
+				EEC860452085BA99004A492D /* Property List.plist in Resources */,
 				EEC860362085BA6A004A492D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = InfoPlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = InfoPlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
