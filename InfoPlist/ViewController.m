@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "InfoPlist-Swift.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getInfomationFromPlist];
-    [self insetInformationToPlist];
-    [self getInfomationFromPlist];
+    SwiftViewController * s = [[SwiftViewController alloc]init];
+    [self presentViewController:s animated:YES completion:nil];
+//    [self.view addSubview:views.view];
+//    [self getInfomationFromPlist];
+//    [self insetInformationToPlist];
+//    [self getInfomationFromPlist];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

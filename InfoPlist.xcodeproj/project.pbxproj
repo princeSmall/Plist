@@ -14,6 +14,7 @@
 		EEC8603B2085BA6B004A492D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC860392085BA6B004A492D /* LaunchScreen.storyboard */; };
 		EEC8603E2085BA6B004A492D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8603D2085BA6B004A492D /* main.m */; };
 		EEC860452085BA99004A492D /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEC860442085BA99004A492D /* Property List.plist */; };
+		EEC8604C2085D265004A492D /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8604B2085D265004A492D /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		EEC8603C2085BA6B004A492D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC8603D2085BA6B004A492D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC860442085BA99004A492D /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		EEC860462085C847004A492D /* InfoPlist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InfoPlist-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEC8604B2085D265004A492D /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +67,14 @@
 				EEC8602F2085BA6A004A492D /* AppDelegate.m */,
 				EEC860312085BA6A004A492D /* ViewController.h */,
 				EEC860322085BA6A004A492D /* ViewController.m */,
+				EEC8604B2085D265004A492D /* SwiftViewController.swift */,
 				EEC860442085BA99004A492D /* Property List.plist */,
 				EEC860342085BA6A004A492D /* Main.storyboard */,
 				EEC860372085BA6B004A492D /* Assets.xcassets */,
 				EEC860392085BA6B004A492D /* LaunchScreen.storyboard */,
 				EEC8603C2085BA6B004A492D /* Info.plist */,
 				EEC8603D2085BA6B004A492D /* main.m */,
+				EEC860462085C847004A492D /* InfoPlist-Bridging-Header.h */,
 			);
 			path = InfoPlist;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				TargetAttributes = {
 					EEC8602A2085BA6A004A492D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -147,6 +153,7 @@
 			files = (
 				EEC860332085BA6A004A492D /* ViewController.m in Sources */,
 				EEC8603E2085BA6B004A492D /* main.m in Sources */,
+				EEC8604C2085D265004A492D /* SwiftViewController.swift in Sources */,
 				EEC860302085BA6A004A492D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = InfoPlist/Info.plist;
@@ -296,6 +304,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Princess.InfoPlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InfoPlist/InfoPlist-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -304,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = InfoPlist/Info.plist;
@@ -313,6 +325,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Princess.InfoPlist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InfoPlist/InfoPlist-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
