@@ -3,7 +3,7 @@
 //  InfoPlist
 //
 //  Created by 李敏 on 2018/4/17.
-//  Copyright © 2018年 Tongle. All rights reserved.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -42,7 +42,7 @@
    
     
     NSMutableDictionary * dic1 = [[NSMutableDictionary alloc]init];
-    [dic1 setObject:@"Tongle" forKey:@"Name"];
+    [dic1 setObject:@"iOS" forKey:@"Name"];
     [dic1 setObject:@"20" forKey:@"Age"];
     [dic1 setObject:@"Man" forKey:@"Sex"];
     [dic1 setObject:@"shanghai" forKey:@"Address"];

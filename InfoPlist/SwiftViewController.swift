@@ -3,7 +3,7 @@
 //  InfoPlist
 //
 //  Created by 李敏 on 2018/4/17.
-//  Copyright © 2018年 Tongle. All rights reserved.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class SwiftViewController: UIViewController {
         print(message)
         
         let dic:NSMutableDictionary = NSMutableDictionary()
-        dic.setObject("Tongle", forKey: "Name" as NSCopying)
+        dic.setObject("iOS", forKey: "Name" as NSCopying)
         dic.setObject("20", forKey: "Age" as NSCopying)
         dic.setObject("shanghai", forKey: "Address" as NSCopying)
         dic.setObject("Man", forKey: "Sex" as NSCopying)
